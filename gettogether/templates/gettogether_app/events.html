@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-
 {% load static %}
-
-<html>
-    <head>
-        <title>Events</title>
-        <!-- <link rel="stylesheet" href="{% static "css/base.css" %}" /> -->
-        <!-- <script src="{% static "js/jquery.js" %}"></script>-->
-    </head>
-    <body>
-        <h1>Events</h1>
-        <strong>{{ boldmessage }}</strong><br />
-    </body>
+<html lang="en" dir="ltr">
+<head>
+<title>Gettogether</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static "layout.css" %}" />
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="/gettogether_app/">GetTogether</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/gettogether_app/events/">Events</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Useful Links</a></li>
+        <li class="last"><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <div id="homepage">
+      <div id="title_button">
+      <section>
+          <h1 id="title" class="event_title">Events</h1>
+          <a href="#" id="new_event">CREATE YOUR EVENT</a>
+      </section>
+      </div>
+      <!-- <section id="services" class="clear"> -->
+      <div class="ev">
+          <div class="ev_details">
+            <h2 class="event_p_title">Movie night!</h2>
+            <img src="{% static "cinema.jpg" %}" width="290" height="180" alt="cinema" />
+            <p>Any Star Wars fans? Let's all go watch the last movie, and join us for an after chat so we can all geek out over our favourite episode.</p>
+         </div>
+         <div class="map">
+                <img src="{% static "cinemamap.jpg" %}" width="400" height="250" alt="cinema" />
+                <a href="#" class="join"><p>JOIN</p></a>
+         </div>
+      </div>
+      <div class="ev">
+          <div class="ev_details">
+            <h2 class="event_p_title">Art and coffee Sunday</h2>
+            <img src="{% static "art.jpg" %}" width="290" height="180" alt="art">
+            <p>Nothing's better than some coffe while making art. Why not doing it together? Join me for a drawing/painting/art making session this Sunday!</p>
+         </div>
+         <div class="map">
+                <img src="{% static "artcoffee.jpg" %}" width="400" height="250" alt="art and coffee" />
+                <a href="#" class="join"><p>JOIN</p></a>
+         </div>
+      </div>
+      <div class="ev">
+          <div class="ev_details">
+            <h2 class="event_p_title">Book club meeting</h2>
+            <img src="{% static "book.jpg" %}" width="290" height="180" alt="books">
+            <p>If you love reading, you should know that doing it in company is much better than doing it alone! Come along and feel free to bring your recommendations!</p>
+          </div>
+          <div class="map">
+                <img src="{% static "bookclub.jpg" %}" width="400" height="250" alt="cinema" />
+                <a href="#" class="join"><p>JOIN</p></a>
+          </div>
+      </div>
+          
+      <!-- </section> -->
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+        <div id="footer" class="clear">
+          <section class="one_third"><a href="#"><h2 class="title">Who are we?</h2></a></section>
+          <section class="one_third"><a href="#"><h2 class="title">Need help?</h2></a></section>
+          <section class="one_third lastbox"><a href="#"><h2 class="title">Contact us</h2></a></section>
+        </div>
+      </div>
+</body>
 </html>

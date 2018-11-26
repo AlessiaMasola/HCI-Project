@@ -19,8 +19,6 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
 
-/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
-
 address, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
 
 q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
@@ -59,29 +57,25 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 .two_third{width:630px;}
 .three_third{width:960px;float:none; margin-right:0; clear:both;}
 
-.one_third, .two_third, .three_third{display:block; float:left; margin:0 30px 0 0;}
-.one_third{width:300px;}
-.two_third{width:630px;}
-.three_third{width:960px; float:none; margin-right:0; clear:both;}
-
 .lastbox{margin-right:0;}
+
 
 /*----------------------------------------------Header-------------------------------------*/
 
 #header{padding:20px 0;}
 
-#header #hgroup{float:left; margin:0 0 20px 0;}
+#header #hgroup{float:left;}
 #header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
 #header #hgroup h1{font-size:36px;}
 #header #hgroup h2{font-size:13px;}
 
-#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#C0BAB6; background-color:#2aafe4;}
+#header nav{display:block; float:right; padding:20px 0; color:#C0BAB6; background-color:#2aafe4;}
 #header nav ul{padding:0 20px;}
 #header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
 #header nav li a{color:#000000; background-color:#2aafe4;}
 #header nav li a:hover{color:#FF9900; background-color:#2aafe4;}
-
+#new_event{display:block; float:right; font-size: 20px}
 /*----------------------------------------------Content Area-------------------------------------*/
 
 #container{padding:30px 0;}
@@ -89,32 +83,29 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container .last{margin:0;}
 #container .more{text-align:right;}
 
-/* ------Slider-----*/
-
-#container #slider{}
-
 /* ------Main Content-----*/
 
 #container #homepage{display:block; width:100%; line-height:1.8em;}
 
-#container #homepage #services{}
-#container #homepage #services article{}
-#container #homepage #services article figure{}
 #container #homepage #services article figure img{margin:0 0 15px 0; padding:4px; border:1px solid #D6D6D6;}
-#container #homepage #services article figure figcaption{}
 #container #homepage #services article figure h2{font-size:14px; font-weight:bold;}
-#container #homepage #services article figure footer{}
 
-#container #homepage #intro{}
-#container #homepage #intro article{}
-#container #homepage #intro article figure{}
 #container #homepage #intro article figure img{float:right; margin:0 0 10px 0; padding:4px; border:1px solid #D6D6D6;}
 #container #homepage #intro article figure figcaption{float:left; width:460px;}
-#container #homepage #intro article figure h2{}
-#container #homepage #intro article figure footer{}
+
 
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:30px 0; font-size:12px; line-height:1.4em;}
 
-#footer section h2.title{margin:0 0 25px 0; padding:0; color:#000000; background-color:#2aafe4; font-size:12px; font-weight:bold; text-transform:uppercase;}
+#footer section h2.title{padding:0; color:#000000; background-color:#2aafe4; font-size:12px; font-weight:bold; text-transform:uppercase;}
+
+/*------------------------------------------Events page-------------------------------------*/
+
+.ev{width:100%; display:block; float: left; padding:4px; border:1px solid; margin:0 1000px 30px 0;}
+.event_title{padding:0; font-size:40px; font-weight:normal; color:#080808; line-height:normal;text-align: left}
+.event_p_title{padding:0; font-size:25px; font-weight:normal; color:#080808; line-height:normal;margin:10px 0 20px 0; }
+
+.ev_details{width:50%; float: left;}
+.map{width:50%; float: left; margin: 40px 0 0 0;}
+.join{font-size: 20px; color:#FF9900;}
