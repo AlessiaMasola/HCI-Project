@@ -1,17 +1,76 @@
 <!DOCTYPE html>
-
 {% load static %}
-
-<html>
-    <head>
-        <!-- <link rel="stylesheet" href="{% static "css/base.css" %}" /> -->
-        <!-- <script src="{% static "js/jquery.js" %}"></script>-->
-    </head>
-    <body>
-        <img src="{% static "pic.jpg" %}" alt="Picture of people socializing" /> 
-        <title>Gettogether</title>
-        <h1>Let's Gettogether!</h1>
-        <strong>{{ boldmessage }}</strong><br />
-        <a href="/gettogether_app/events/">Events</a><br />
-    </body>
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 88</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static "layout.css" %}" />
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">GetTogether</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Useful Links</a></li>
+        <li class="last"><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <section id="slider"><a href="#"><img src="{% static "people.jpg" %}" alt="Picture of people socializing" /></a></section>
+    <div id="homepage">
+      <section><h5>We believe that anything you do alone, you can do it much better in company. 
+          Engaging in social activity helps you phisically and mentally, so let's Gettogether!</h5></section>
+      <section><h1>Most popular events</h1></section>
+      <section id="services" class="clear">
+        <article class="one_third">
+          <figure><img src="{% static "cinema.jpg" %}" width="290" height="180" alt="cinema" />
+            <figcaption>
+              <h2>Movie night!</h2>
+              <p>Any Star Wars fans? Let's all go watch the last movie, and join us for an after chat so we can all geek out over our favourite episode.</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="one_third">
+          <figure><img src="{% static "art.jpg" %}" width="290" height="180" alt="art">
+            <figcaption>
+              <h2>Art and coffee Sunday</h2>
+              <p>Nothing's better than some coffe while making art. Why not doing it together? Join me for a drawing/painting/art making session this Sunday!</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="one_third lastbox">
+          <figure><img src="{% static "book.jpg" %}" width="290" height="180" alt="books">
+            <figcaption>
+              <h2>Book club meeting</h2>
+              <p>If you love reading, you should know that doing it in company is much better than doing it alone! Come along and feel free to bring your recommendations!</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      <section id="intro" class="last clear">
+            <a href="#"><h6>Create your event!</h6></a>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <div id="footer" class="clear">
+    <section class="one_third"><a href="#"><h2 class="title">Who are we?</h2></a></section>
+    <section class="one_third"><a href="#"><h2 class="title">Need help?</h2></a></section>
+    <section class="one_third lastbox"><a href="#"><h2 class="title">Contact us</h2></a></section>
+  </div>
+</div>
+</body>
 </html>
