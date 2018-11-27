@@ -76,14 +76,12 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #header nav li a{color:#000000; background-color:#2aafe4;}
 #header nav li a:hover{color:#FF9900; background-color:#2aafe4;}
 #new_event{display:block; float:right; font-size: 20px}
-/*----------------------------------------------Content Area-------------------------------------*/
 
 #container{padding:30px 0;}
 #container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
 #container .last{margin:0;}
 #container .more{text-align:right;}
 
-/* ------Main Content-----*/
 
 #container #homepage{display:block; width:100%; line-height:1.8em;}
 
@@ -97,24 +95,35 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:30px 0; font-size:12px; line-height:1.4em;}
-
 #footer section h2.title{padding:0; color:#000000; background-color:#2aafe4; font-size:12px; font-weight:bold; text-transform:uppercase;}
 
-/*------------------------------------------Events and Game page-------------------------------------*/
+/*------------------------------------------Events, Game and forum page-------------------------------------*/
 
 .ev, .game{width:100%; display:block; float: left; padding:4px; border:1px solid; margin:0 1000px 30px 0;}
-.event_title{padding:0; font-size:40px; font-weight:normal; color:#080808; line-height:normal;text-align: left}
+.event_title{padding:0; font-size:40px; font-weight:normal; color:#080808; line-height:normal;text-align: left;}
 .event_p_title{padding:0; font-size:25px; font-weight:normal; color:#080808; line-height:normal;margin:10px 0 20px 0; }
 
+.date{width:50%; float: right;}
 .ev_details{width:50%; float: left;}
 /* .chess{width:50%; float: left;} */
-.map{width:50%; float: left; margin: 40px 10px 0 0;}
-.join{font-size: 20px; color:#FF9900;}
+.join_date{width: 100%;}
+.map{width:50%; float: left;margin: 40px 0 0 0;}
+.join{width:50%; float: left; font-size: 20px; color:#FF9900;}
 .all_games{font-size: 30px;color:#FF9900;}
-.text_chat{width:40%; float: left;}
+.text_chat{width:50%; float: left;}
 .notification{margin:0 0 0 0; text-align: right;}
 .users_chat{color: #000000; text-align: right;}
+.list{text-align: left; font-size: 20px;}
+.thread{text-align: left;}
 
+#moreforums{text-align: left;}
 #chat_text_field{margin:200px 0 0 0;float:right;}
+#forum {border-collapse: collapse; width: 100%; margin: 20px 0 40px 0;}
+#forum td, #forum th {border: 1px solid #ddd; padding: 8px;}
+#forum tr:nth-child(even){background-color: #f2f2f2;}
+#forum tr:hover {background-color: #ddd;}
+#forum th {padding-top: 12px; padding-bottom: 12px; text-align: center; background-color: #FF9900; color: white;}
+#forum_index{text-align: left; margin:20px 0 0 0}
+#start_thread{text-align: right;font-size: 20px;}
 
 /* .game{width:100%; display:block; float: left; padding:4px; border:1px solid; margin:0 1000px 30px 0;} */
