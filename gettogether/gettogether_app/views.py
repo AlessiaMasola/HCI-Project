@@ -15,6 +15,7 @@ def index(request):
     return render_to_response('gettogether_app/index.html', context_dict, context)
 
 def events(request):
-    context = RequestContext(request)
-    context_dict = {'boldmessage': "Here's a list of cool events"}
-    return render_to_response('gettogether_app/events.html', context_dict, context)
+    return render_to_response('gettogether_app/events.html')
+
+def games(request):
+    return render_to_response('gettogether_app/games.html')
